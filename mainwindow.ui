@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Linked List Visualizer</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <property name="spacing">
+     <number>20</number>
+    </property>
+    <property name="margin">
+     <number>20</number>
+    </property>
+
+    <!-- Title -->
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="text">
+       <string>Linked List Visualizer</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+        font-size: 28px;
+        font-weight: bold;
+       </string>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Graphics View -->
+    <item>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>250</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+        background: #f8f9fa;
+        border: 2px solid #d0d0d0;
+        border-radius: 10px;
+       </string>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Input Row -->
+    <item>
+     <layout class="QHBoxLayout" name="inputRow">
+      <item>
+       <widget class="QLineEdit" name="valueInput">
+        <property name="placeholderText">
+         <string>Enter Value</string>
+        </property>
+        <property name="maximumWidth">
+         <number>150</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="posInput">
+        <property name="placeholderText">
+         <string>Position</string>
+        </property>
+        <property name="maximumWidth">
+         <number>150</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+    <!-- Buttons Grid -->
+    <item>
+     <layout class="QGridLayout" name="buttonGrid">
+
+      <item row="0" column="0">
+       <widget class="QPushButton" name="insertBeginBtn">
+        <property name="text">
+         <string>Insert Begin</string>
+        </property>
+        <property name="styleSheet">
+         <string>background:#007bff;color:white;font-weight:bold;border-radius:8px;padding:8px;</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="0" column="1">
+       <widget class="QPushButton" name="insertEndBtn">
+        <property name="text">
+         <string>Insert End</string>
+        </property>
+        <property name="styleSheet">
+         <string>background:#28a745;color:white;font-weight:bold;border-radius:8px;padding:8px;</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="0" column="2">
+       <widget class="QPushButton" name="insertPosBtn">
+        <property name="text">
+         <string>Insert Position</string>
+        </property>
+        <property name="styleSheet">
+         <string>background:#6610f2;color:white;font-weight:bold;border-radius:8px;padding:8px;</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="1" column="0">
+       <widget class="QPushButton" name="deleteBeginBtn">
+        <property name="text">
+         <string>Delete Begin</string>
+        </property>
+        <property name="styleSheet">
+         <string>background:#dc3545;color:white;font-weight:bold;border-radius:8px;padding:8px;</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="1" column="1">
+       <widget class="QPushButton" name="deleteEndBtn">
+        <property name="text">
+         <string>Delete End</string>
+        </property>
+        <property name="styleSheet">
+         <string>background:#e67e22;color:white;font-weight:bold;border-radius:8px;padding:8px;</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="1" column="2">
+       <widget class="QPushButton" name="deletePosBtn">
+        <property name="text">
+         <string>Delete Position</string>
+        </property>
+        <property name="styleSheet">
+         <string>background:#fd7e14;color:white;font-weight:bold;border-radius:8px;padding:8px;</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="2" column="1">
+       <widget class="QPushButton" name="searchBtn">
+        <property name="text">
+         <string>Search</string>
+        </property>
+        <property name="styleSheet">
+         <string>background:#20c997;color:white;font-weight:bold;border-radius:8px;padding:8px;</string>
+        </property>
+       </widget>
+      </item>
+
+      <item row="3" column="1">
+       <widget class="QPushButton" name="clearBtn">
+        <property name="text">
+         <string>Clear List</string>
+        </property>
+        <property name="styleSheet">
+         <string>background:#6c757d;color:white;font-weight:bold;border-radius:8px;padding:8px;</string>
+        </property>
+       </widget>
+      </item>
+
+     </layout>
+    </item>
+
+   </layout>
+  </widget>
+
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
